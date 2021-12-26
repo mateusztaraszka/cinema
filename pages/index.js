@@ -1,9 +1,12 @@
+import PageLayout from "../components/layouts/pageLayout";
 
 const Home = () => {
   return (
-    <div className={'text-[15rem]'}>
-      Add tailwind
-    </div>
+    <PageLayout>
+      <div className={'text-[15rem]'}>
+        Add tailwind
+      </div>
+    </PageLayout>
   )
 }
 
