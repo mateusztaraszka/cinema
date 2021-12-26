@@ -2,19 +2,42 @@
 @tailwind components;
 @tailwind utilities;
 
-html,
-body {
+* {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
 a {
-  color: inherit;
   text-decoration: none;
 }
 
-* {
-  box-sizing: border-box;
+@layer components {
+
+  .button-styles {
+    @apply py-2.5 relative transition font-bold duration-300 delay-1000 hover:bg-blue hover:text-blue-dark;
+    @apply inline-block px-8 uppercase cursor-pointer tracking-widest text-blue bg-blue-dark;
+  }
+
+  .buttonAnimationDefaultStyles {
+    @apply absolute bg-blue transition-transform group-hover:transition-transform duration-250
+  }
+
+  .left-side {
+    @apply buttonAnimationDefaultStyles left-0 bottom-0 w-px h-full scale-y-0 origin-top group-hover:origin-bottom group-hover:scale-y-100;
+  }
+
+  .right-side {
+    @apply buttonAnimationDefaultStyles right-0 top-0 w-px h-full scale-y-0 origin-bottom group-hover:origin-top group-hover:scale-y-100;
+  }
+
+  .bottom-side {
+    @apply buttonAnimationDefaultStyles right-0 bottom-0 h-px w-full scale-x-0 origin-left group-hover:origin-right group-hover:scale-x-100;
+  }
+
+  .top-side {
+    @apply buttonAnimationDefaultStyles left-0 top-0 h-px w-full scale-x-0 origin-right group-hover:origin-left group-hover:scale-x-100;
+  }
 }
