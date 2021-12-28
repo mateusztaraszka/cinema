@@ -1,17 +1,15 @@
 import React from "react";
 
-// eslint-disable-next-line react/display-name
-const Button = React.forwardRef(({children, href}, ref) => {
-
+const SubmitButton = ({children}) => {
   return (
-    <a href={href} ref={ref} className={'button-styles group'}>
+    <button type='submit' className={'button-styles group'}>
       <span className={'left-side'}/>
       <span className={'top-side delay-250'}/>
       <span className={'right-side delay-500'}/>
       <span className={'bottom-side delay-750'}/>
       {children}
-    </a>
-    )
-})
+    </button>
+  )
+}
 
-export default Button;
+export default SubmitButton;

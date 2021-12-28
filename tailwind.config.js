@@ -18,6 +18,7 @@ module.exports = {
           'darkest': '#1f242d',
         },
         'grey': '#787878',
+        'red': '#FF0000',
       },
       transitionDuration: {
         '250': '250ms',
