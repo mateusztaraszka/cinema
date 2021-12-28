@@ -5,10 +5,10 @@ import {Swiper, SwiperSlide} from 'swiper/react';
 import SwiperCore, {Navigation, Autoplay} from 'swiper';
 import Link from "next/link";
 import {ArrowLeft, ArrowRight} from "../components/arrows";
+import Button from "../components/button";
 
 SwiperCore.use([Autoplay, Navigation]);
 import 'swiper/css';
-import Button from "../components/button";
 
 
 const data = [
@@ -66,7 +66,7 @@ const Home = () => {
               <SwiperSlide key={index}>
                 <div className={`bg-[url('../public/images/joker.png')] h-[550px] w-[977px] bg-cover relative`}>
                   <div className={'absolute right-8 bottom-8'}>
-                    <Link href={'/'} passHref>
+                    <Link href={'/movies/joker'} passHref>
                       <Button>Detale</Button>
                     </Link>
                   </div>
