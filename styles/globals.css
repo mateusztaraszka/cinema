@@ -14,10 +14,54 @@ a {
   text-decoration: none;
 }
 
+.snowflake {
+  position: absolute;
+  animation: animateSnow 8s linear infinite;
+}
+
+.snowflake img {
+  animation: rotate 5s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes animateSnow {
+  0%{
+    transform: translate(0, -10rem);
+  }
+  50% {
+    transform: translate(50px, 50vh);
+  }
+  100% {
+    transform: translate(100px, calc(100vh + 10rem));
+  }
+}
+
+.arrowClick {
+  transition: transform 3000ms ease-in-out;
+  animation: click 1s linear;
+}
+
+@keyframes click {
+  50% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
 @layer components {
 
   .button-styles {
-    @apply py-2.5 relative transition font-bold duration-300 delay-1000 hover:bg-blue hover:text-blue-dark;
+    @apply py-2.5 relative transition font-bold duration-300 delay-1000 hover:bg-transparent hover:text-white;
     @apply inline-block px-8 uppercase cursor-pointer tracking-widest text-blue bg-blue-dark;
   }
 
