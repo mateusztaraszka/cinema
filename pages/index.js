@@ -12,37 +12,6 @@ SwiperCore.use([Autoplay, Navigation]);
 import 'swiper/css';
 import axios from 'axios';
 
-const data1 = [
-  {
-    title: 'Joker',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vel congue orci.' +
-      ' Praesent maximus ipsum vel posuere feugiat.' +
-      ' Pellentesque tortor massa, pharetra nec maximus ullamcorper.',
-    img: './../public/images/joker.png'
-  },
-  {
-    title: 'Joker',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vel congue orci.' +
-      ' Praesent maximus ipsum vel posuere feugiat.' +
-      ' Pellentesque tortor massa, pharetra nec maximus ullamcorper.',
-    img: './../public/images/joker.png'
-  },
-  {
-    title: 'Joker',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vel congue orci.' +
-      ' Praesent maximus ipsum vel posuere feugiat.' +
-      ' Pellentesque tortor massa, pharetra nec maximus ullamcorper.',
-    img: './../public/images/joker.png'
-  },
-  {
-    title: 'Joker',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vel congue orci.' +
-      ' Praesent maximus ipsum vel posuere feugiat.' +
-      ' Pellentesque tortor massa, pharetra nec maximus ullamcorper.',
-    img: './../public/images/joker.png'
-  },
-]
-
 const Home = () => {
   const [swiper, setSwiper] = useState(null);
   const [data, setData] = useState([])
