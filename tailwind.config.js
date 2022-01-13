@@ -13,11 +13,11 @@ module.exports = {
       colors: {
         'white': '#FFF',
         'blue': {
-          'DEFAULT': '#2894ff',
+          'DEFAULT': '#E3E8EC',
           'dark': '#262c37',
           'darkest': '#1f242d',
         },
-        'grey': '#787878',
+        'grey': '#D7E1EA',
         'red': '#FF0000',
       },
       transitionDuration: {

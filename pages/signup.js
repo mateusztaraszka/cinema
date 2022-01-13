@@ -8,7 +8,7 @@ import SubmitButton from "../components/form/submitButton";
 const SignUp = () => {
   return (
     <PageLayout>
-      <SectionLayout className={'container bg-blue-dark/80 w-1/3 px-24 py-20'}>
+      <SectionLayout className={'container bg-blue-dark/80 w-1/3 px-24 py-32'}>
         <Formik
           initialValues={{login: '', password: '', email: ''}}
           validationSchema={Yup.object({
