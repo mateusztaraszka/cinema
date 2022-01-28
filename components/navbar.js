@@ -17,7 +17,6 @@ const Navbar = () => {
         </Link>
 
         <div className={'flex gap-4 items-center'}>
-
           {
             !signUpData.loggedIn ? (
                 <>

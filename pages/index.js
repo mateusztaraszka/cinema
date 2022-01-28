@@ -23,8 +23,8 @@ const Home = () => {
 
   return (
     <PageLayout>
-      <SectionLayout className={'container flex-1 bg-blue-darkest/50 rounded-xl'}>
-        <h1 className={'text-blue px-8 uppercase text-2xl font-bold text-right mb-8'}>Dostępne filmy</h1>
+      <SectionLayout className={'container flex-1 bg-[#C0C0C0]/50 rounded-xl'}>
+        <h1 className={'text-blue-dark px-8 uppercase text-2xl font-bold text-right mb-8'}>Dostępne filmy</h1>
         <Swiper onSwiper={(swiper) => setSwiper(swiper)}
                 spaceBetween={16}
                 slidesPerView={1.3}
